@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript API</title>
+    <script src="https://cdn.jsdelivr.net/npm/@clickmax/browser-sdk@latest/dist/forms/clickmax-forms.js"></script>
+    
+</head>
+<body>
+    <button onclick="sendLead()">Testar Envio de Lead</button>
+    <script>
+        async function sendLead() {
+          console.log("Iniciando envio...");
+          
+          // Verifica se o SDK carregou corretamente
+          if (!window.Clickmax) {
+            console.error("Erro: O SDK do Clickmax não foi carregado. Verifique sua conexão ou o link do script.");
+            return;
+          }
+      
+          try {
+            await window.Clickmax.submitLead({
+              slug: 'h4p6oDOmYPt__dNBDIyR7cDW',
+              data: {
+                email: 'lead@teste.com',
+                name: 'Teste Local',
+                telephone: '5511999999999'
+              }
+            });
+      
+            console.log("Sucesso! Lead enviado.");
+            
+            // window.location.href = 'https://www.imperialbg.online/f/produto-assinatura-ticto-4ff21263-ef68-4bcb-b28f-98bb4a08514e';
+            
+          } catch (error) {
+            console.error('Falha ao enviar lead:', error);
+          }
+        }
+      </script>
+</body>
+</html>
