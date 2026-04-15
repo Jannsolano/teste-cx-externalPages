@@ -5,22 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste 3</title>
     <script src="https://cdn.jsdelivr.net/npm/@clickmax/browser-sdk@latest/dist/forms/clickmax-forms.js" defer></script>
+    <style>
+
+        .cx-preview-form {
+          display: grid;
+          gap: 12px;
+          width: min(100%, 420px);
+          padding: 24px;
+          border: 1px solid #d1d5db;
+          border-radius: 16px;
+          background: #ffffff;
+          box-shadow: 0 8px 30px rgb(15 23 42 / 0.08);
+        }
+  
+        .cx-preview-form input:not([type='checkbox']):not([hidden]),
+        .cx-preview-form button[type='submit'] {
+          width: 100%;
+          min-height: 44px;
+          border-radius: 10px;
+          font: inherit;
+        }
+  
+        .cx-preview-form input:not([type='checkbox']):not([hidden]) {
+          padding: 12px 14px;
+          border: 1px solid #d1d5db;
+          background: #ffffff;
+          color: #1f2123;
+        }
+  
+        .cx-preview-form label {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #565c61;
+          font-size: 14px;
+        }
+  
+        .cx-preview-form input[type='checkbox'] {
+          width: 18px;
+          height: 18px;
+          accent-color: #111827;
+        }
+  
+        .cx-preview-form button[type='submit'] {
+          border: 0;
+          background: #111827;
+          color: #ffffff;
+          font-weight: 600;
+          cursor: pointer;
+        }
+  </style>
 </head>
 <body>
     <form
-  data-cx-ingest-form
-  data-cx-slug="h4p6oDOmYPt__dNBDIyR7cDW"
-  data-cx-redirect-url="https://www.imperialbg.online/f/produto-assinatura-ticto-4ff21263-ef68-4bcb-b28f-98bb4a08514e"
-  data-cx-success-message="Enviado com sucesso!">
-  <input data-cx-field="name" type="text" placeholder="Seu nome" />
-  <input data-cx-field="email" type="email" placeholder="Seu e-mail" />
-  <input data-cx-field="telephone" type="tel" placeholder="Seu telefone" />
-  <input data-cx-field="website" type="text" hidden />
-  <label>
+        class="cx-preview-form"
+        data-cx-ingest-form
+        data-cx-slug="h4p6oDOmYPt__dNBDIyR7cDW"
+        data-cx-redirect-url="https://www.imperialbg.online/f/produto-assinatura-ticto-4ff21263-ef68-4bcb-b28f-98bb4a08514e"
+        data-cx-success-message="Enviado com sucesso!">
+    <input data-cx-field="name" type="text" placeholder="Seu nome" />
+    <input data-cx-field="email" type="email" placeholder="Seu e-mail" />
+    <input data-cx-field="telephone" type="tel" placeholder="Seu telefone" />
+    <input data-cx-field="website" type="text" hidden />
+    <label>
     <input data-cx-field="lgpdApproved" type="checkbox" />
-    Concordo em receber comunicações
-  </label>
-  <button type="submit">Enviar</button>
+        Concordo em receber comunicações
+    </label>
+    <button type="submit">Enviar</button>
 </form>
     <h1><a href="../pag1capturawidget/index.html">Voltar para o teste de widget modal</a></h1>
 </body>
