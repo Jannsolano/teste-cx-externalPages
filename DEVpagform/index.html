@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>External page Staging</title>
+    <script src="https://cdn.jsdelivr.net/npm/@clickmax/browser-sdk@beta/dist/forms/clickmax-forms.js" defer></script>
+    <style>
+      *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .cx-preview-form {
+        display: grid;
+        gap: 12px;
+        width: min(100%, 420px);
+        padding: 24px;
+        border: 1px solid #d1d5db;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 30px rgb(15 23 42 / 0.08);
+      }
+
+      .cx-preview-form input:not([type='checkbox']):not([hidden]),
+      .cx-preview-form button[type='submit'] {
+        width: 100%;
+        min-height: 44px;
+        border-radius: 10px;
+        font: inherit;
+      }
+
+      .cx-preview-form input:not([type='checkbox']):not([hidden]) {
+        padding: 12px 14px;
+        border: 1px solid #d1d5db;
+        background: #ffffff;
+        color: #1f2123;
+      }
+
+      .cx-preview-form label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #565c61;
+        font-size: 14px;
+      }
+
+      .cx-preview-form input[type='checkbox'] {
+        width: 18px;
+        height: 18px;
+        accent-color: #111827;
+      }
+
+      .cx-preview-form button[type='submit'] {
+        border: 0;
+        background: #111827;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+</style>
 </head>
 <body>
     
+
+
+
+<form
+  class="cx-preview-form"
+  data-cx-ingest-form
+  data-cx-slug="0tmsdPMV6rfqjguSbQ_KH-ee"
+  data-cx-redirect-url="https://squad-de-membros-dev.clickmax.pro/f/assinatura-de-testes-93a3a4f5-b14a-4cef-8647-935ed536491a"
+  data-cx-success-message="Enviado com sucesso!"
+  data-cx-locale="pt-BR">
+  <input data-cx-field="name" type="text" placeholder="Seu nome" />
+  <input data-cx-field="email" type="email" placeholder="Seu e-mail" />
+  <input data-cx-field="telephone" type="tel" placeholder="Seu telefone" />
+  <label>
+    <input data-cx-field="lgpdApproved" type="checkbox" />
+    Concordo em receber comunicações
+  </label>
+  <input data-cx-field="website" type="text" hidden />
+  <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
