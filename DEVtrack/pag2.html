@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Start of Clickmax SDK Code -->
+    <script>
+    (()=>{let e="thalik",c="/KybYEtRyxdOS16-SC30BS",t=window;if(!t.cxs){function s(e,...c){t._cx?t._cx.callMethod.apply(t._cx,[e,...c]):t.cxs.queue.push([e,...c])}s.queue=[],t.cxs=s;{let t=encodeURIComponent,s=document,n=`https://api.clickmax.dev/sdk/script.js?ps=${t(e)}&pg=${t(c)}`,p="script",i=s.createElement(p);i.async=!0,i.src=n;let a=s.getElementsByTagName(p)[0];a.parentNode.insertBefore(i,a)}}cxs("init",e,c)})();
+
+    cxs('track', 'page_view');
+    </script>
+    <noscript><img height="1" width="1" style="display: none" src="https://api.clickmax.dev/tr/thalik?ty=page_view&pg=%2FKybYEtRyxdOS16-SC30BS&pl=%7B%22noscript%22%3A1%7D"/></noscript>
+    <!-- End of Clickmax SDK Code -->
+</head>
+<body>
+    <h1>Teste de tracking do page view externo</h1>
+    <!-- Botão que avança para a próxima etapa do funil -->
+    <button class="cm-checkout-button">Comprar agora</button>
+    <!-- ...ou, sem trocar a classe existente: -->
+    <button data-cx-track="click">Comprar agora</button>
+
+    <!-- Link que avança para a próxima etapa -->
+    <a href="https://thalik.clickmax.pro/checkout12312332132?lk=1961f359-dc97-44d2-b05f-3acf1d833d7c" class="cm-next-funnel-node">Continuar</a>
+    <!-- ...ou: -->
+    <a href="https://thalik.clickmax.pro/checkout12312332132?lk=1961f359-dc97-44d2-b05f-3acf1d833d7c" data-cx-track="link">Continuar</a>
+
+    <!-- Formulário que captura o contato e avança -->
+    <form class="cm-form">
+    <input name="email" type="email" />
+    <button type="submit">Quero participar</button>
+</form>
+</body>
+</html>
