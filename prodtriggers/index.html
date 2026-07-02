@@ -28,5 +28,20 @@
     data-cx-required-fields="email,telephone"
     data-cx-show-lgpd="true"
     data-cx-lgpd-required="true"></div>
+        <!-- Botão que avança para a próxima etapa do funil -->
+    <button class="cm-checkout-button">Comprar agora</button>
+    <!-- ...ou, sem trocar a classe existente: -->
+    <button data-cx-track="click">Comprar agora</button>
+
+    <!-- Link que avança para a próxima etapa -->
+    <a href="#" class="cm-next-funnel-node">Continuar</a>
+    <!-- ...ou: -->
+    <a href="#" data-cx-track="link">Continuar</a>
+
+    <!-- Formulário que captura o contato e avança -->
+    <form class="cm-form">
+    <input name="email" type="email" />
+    <button type="submit">Quero participar</button>
+    </form>
 </body>
 </html>
