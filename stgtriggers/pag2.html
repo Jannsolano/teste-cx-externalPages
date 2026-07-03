@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>validação external</title>
+    <!-- Start of Clickmax SDK Code -->
+    <script>
+    (()=>{let e="thalik",c="/tYdYKF2c25GDkMM8pepyp",t=window;if(!t.cxs){function s(e,...c){t._cx?t._cx.callMethod.apply(t._cx,[e,...c]):t.cxs.queue.push([e,...c])}s.queue=[],t.cxs=s;{let t=encodeURIComponent,s=document,n=`https://api.clickmax.dev/sdk/script.js?ps=${t(e)}&pg=${t(c)}`,p="script",i=s.createElement(p);i.async=!0,i.src=n;let a=s.getElementsByTagName(p)[0];a.parentNode.insertBefore(i,a)}}cxs("init",e,c)})();
+
+    cxs('track', 'page_view');
+    </script>
+    <noscript><img height="1" width="1" style="display: none" src="https://api.clickmax.dev/tr/thalik?ty=page_view&pg=%2FtYdYKF2c25GDkMM8pepyp&pl=%7B%22noscript%22%3A1%7D"/></noscript>
+    <!-- End of Clickmax SDK Code -->
 </head>
 <body>
     <h1>Passe para o próximo nó do funil</h1>
+    <!-- Botão que avança para a próxima etapa do funil -->
+    <button class="cm-checkout-button">Comprar agora</button>
+    <!-- ...ou, sem trocar a classe existente: -->
+    <button data-cx-track="click">Comprar agora</button>
+    <!-- Cole o container uma única vez no body da página -->
+    <div
+    data-cx-form-widget
+    data-cx-widget-id="63e1c918-b7f6-4314-b251-6dc79f323da9"
+    data-cx-mode="modal"
+    data-cx-theme="dark"
+    data-cx-title="Fale com nosso time"
+    data-cx-description="Deixe seus dados e entraremos em contato."
+    data-cx-submit-label="Enviar"
+    data-cx-accent="#D4FF00"
+    data-cx-fields="name,email,telephone"
+    data-cx-required-fields="email,telephone"
+    data-cx-show-lgpd="true"
+    data-cx-lgpd-required="true"></div>
+
+    <!-- Posicione este botão onde quiser na página -->
+    <button
+    data-cx-open="63e1c918-b7f6-4314-b251-6dc79f323da9"
+    style="padding:14px 32px;background:#D4FF00;color:#0a0a0a;border:none;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;">
+    Quero saber mais
+    </button>
 </body>
 </html>
