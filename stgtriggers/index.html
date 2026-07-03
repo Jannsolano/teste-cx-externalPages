@@ -11,7 +11,7 @@
     cxs('track', 'page_view');
     </script>
     <noscript><img height="1" width="1" style="display: none" src="https://api.clickmax.dev/tr/andre-tessmann-5876?ty=page_view&pg=%2FT1Qyb6_OH8ak-H_TeRM9B&pl=%7B%22noscript%22%3A1%7D"/></noscript>
-<!-- End of Clickmax SDK Code -->
+    <!-- End of Clickmax SDK Code -->
 </head>
 <body>
     <h1>Utilize o formulário abaixo para captura</h1>
@@ -28,8 +28,11 @@
     data-cx-required-fields="email,telephone"
     data-cx-show-lgpd="true"
     data-cx-lgpd-required="true"></div>
-    <h2>Ou apenas clique no botão abaixo para seguir em frente</h2>
+    <h2>Ou apenas clique em um botão abaixo para seguir em frente</h2>
     <!-- Botão que avança para a próxima etapa do funil -->
     <button class="cm-checkout-button">Comprar agora</button>
+    <!-- ...ou, sem trocar a classe existente: -->
+    <button data-cx-track="click">Comprar agora</button>
+
 </body>
 </html>
